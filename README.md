@@ -105,6 +105,7 @@ You can choose the target industry during the problem-solving process for more t
 🖼️ Example Screenshot
 
 Here’s a screenshot of the app in action:
+![App Screenshot](app_screenshot_1.png)
 
 🧑‍🔧 Contributing
 
