@@ -13,4 +13,4 @@ sphinx:
 
 python:
   install:
-    - requirements: docs/requirements.txt  # Make sure this matches the actual filename
+    - requirements: requirements.txt  # Make sure this matches the actual filename
