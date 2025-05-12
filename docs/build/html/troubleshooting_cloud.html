@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Troubleshooting Guide for Cloud Version (Groq API) &#8212; TRIZ-APP 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=61cd365c" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Troubleshooting Guide for Local Version (Ollama)" href="troubleshooting_ollama.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="troubleshooting-guide-for-cloud-version-groq-api">
+<h1>Troubleshooting Guide for Cloud Version (Groq API)<a class="headerlink" href="#troubleshooting-guide-for-cloud-version-groq-api" title="Link to this heading">¶</a></h1>
+<p>If you encounter any issues while using the <strong>TRIZ Engineering Problem Solver</strong> with the <strong>Groq API (cloud)</strong> version, try the following steps.</p>
+<section id="common-issues">
+<h2>Common Issues:<a class="headerlink" href="#common-issues" title="Link to this heading">¶</a></h2>
+<p>1. <strong>Groq API Key Not Working</strong>
+- Ensure that your API key is correctly set in the <cite>.streamlit/secrets.toml</cite> file:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">[GROQ_API_KEY]</span>
+<span class="pre">api_key</span> <span class="pre">=</span> <span class="pre">&quot;your-groq-api-key&quot;</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If the key is incorrect or expired, generate a new one from the [Groq website](<a class="reference external" href="https://groq.com">https://groq.com</a>).</p></li>
+</ul>
+<p>2. <strong>Streamlit App Not Opening</strong>
+- Ensure that all dependencies are installed by running:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span>
+<span class="pre">`</span></code></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Make sure no other application is using port 8501 (default Streamlit port).</p></li>
+</ul>
+<p>3. <strong>API Call Fails</strong>
+- Ensure that the <strong>Groq API key</strong> is valid and has not exceeded any usage limits.
+- Check for network connectivity issues when making API calls.</p>
+<p>4. <strong>Slow Performance</strong>
+- If the app is running slow, it could be due to large models or heavy traffic on the Groq API servers. Try again later or reduce the number of API calls.</p>
+<p>For additional support, please contact Groq support or refer to the [Ollama Troubleshooting Guide](troubleshooting_ollama).</p>
+<p>5. <strong>Model Not Responding</strong>
+- Ensure that the Groq API is operational by checking their status page or contacting support.
+- If the model fails to respond, try restarting the Streamlit app.
+- If the issue persists, consider checking the Groq API documentation for any changes or updates.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">TRIZ-APP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">🧩 Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install_cloud.html">Installation Guide for Cloud Version (Groq API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install_ollama.html">Installation Guide for Local Version (Ollama)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🚀 Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_cloud.html">Usage Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🛠 Troubleshooting</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_ollama.html">Troubleshooting Guide for Local Version (Ollama)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting Guide for Cloud Version (Groq API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#common-issues">Common Issues:</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="troubleshooting_ollama.html" title="previous chapter">Troubleshooting Guide for Local Version (Ollama)</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, hajar el hadri and jouak bouthayna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/troubleshooting_cloud.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Installation Guide for Cloud Version (Groq API) &#8212; TRIZ-APP 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=61cd365c" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation Guide for Local Version (Ollama)" href="install_ollama.html" />
+    <link rel="prev" title="TRIZ Engineering Problem Solver" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="installation-guide-for-cloud-version-groq-api">
+<h1>Installation Guide for Cloud Version (Groq API)<a class="headerlink" href="#installation-guide-for-cloud-version-groq-api" title="Link to this heading">¶</a></h1>
+<p>To install and run the <strong>TRIZ Engineering Problem Solver</strong> using <strong>Groq API</strong>, follow these steps.</p>
+<section id="requirements">
+<h2>Requirements:<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Python 3.8+</strong></p></li>
+<li><p><strong>Streamlit</strong> (for the web interface)</p></li>
+<li><p><strong>Groq API Key</strong> (for accessing the Groq API)</p></li>
+</ul>
+</section>
+<section id="steps">
+<h2>Steps:<a class="headerlink" href="#steps" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>Clone the Repository</strong>
+First, clone the repository to your local machine:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/your-username/your-repo.git</span>
+<span class="pre">cd</span> <span class="pre">your-repo</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>Install dependencies</strong>
+Install the required Python packages:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>Set Up Groq API Key</strong>
+Sign up at Groq API and obtain an API key.
+Store your API key in the .streamlit/secrets.toml file. The file should look like this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">[GROQ_API_KEY]</span>
+<span class="pre">api_key</span> <span class="pre">=</span> <span class="pre">&quot;your-groq-api-key&quot;</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>Run the Streamlit App</strong>
+Finally, run the Streamlit app to start the TRIZ Engineering Problem Solver:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">streamlit</span> <span class="pre">run</span> <span class="pre">trizapp.py</span>
+<span class="pre">`</span></code></p>
+<p>This will open the app in your web browser. You can now use the app for solving engineering problems using TRIZ methodology with Groq API.</p>
+</li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">TRIZ-APP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">🧩 Installation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Guide for Cloud Version (Groq API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#steps">Steps:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install_ollama.html">Installation Guide for Local Version (Ollama)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🚀 Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_cloud.html">Usage Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🛠 Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_ollama.html">Troubleshooting Guide for Local Version (Ollama)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_cloud.html">Troubleshooting Guide for Cloud Version (Groq API)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">TRIZ Engineering Problem Solver</a></li>
+      <li>Next: <a href="install_ollama.html" title="next chapter">Installation Guide for Local Version (Ollama)</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, hajar el hadri and jouak bouthayna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/install_cloud.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

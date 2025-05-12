@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Installation Guide for Local Version (Ollama) &#8212; TRIZ-APP 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=61cd365c" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage Guide" href="usage_cloud.html" />
+    <link rel="prev" title="Installation Guide for Cloud Version (Groq API)" href="install_cloud.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="installation-guide-for-local-version-ollama">
+<h1>Installation Guide for Local Version (Ollama)<a class="headerlink" href="#installation-guide-for-local-version-ollama" title="Link to this heading">¶</a></h1>
+<p>To install and run the <strong>TRIZ Engineering Problem Solver</strong> locally using <strong>Ollama</strong> and the <strong>LLaMA3</strong> model, follow these steps.</p>
+<section id="requirements">
+<h2>Requirements:<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Python 3.8+</strong></p></li>
+<li><p><strong>Ollama</strong> (for running the LLaMA3 model locally)</p></li>
+<li><p><strong>Streamlit</strong> (for the web interface)</p></li>
+</ul>
+</section>
+<section id="steps">
+<h2>Steps:<a class="headerlink" href="#steps" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>Clone the Repository</strong>
+First, clone the repository to your local machine using Git:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/your-username/your-repo.git</span>
+<span class="pre">cd</span> <span class="pre">your-repo</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>Install dependencies</strong>
+Install the required Python packages:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>Install Ollama</strong>
+To run the LLaMA3 model locally, you need to install Ollama. Follow these steps:
+Go to the Ollama website and download the appropriate version for your operating system (macOS, Windows, or Linux).
+Follow the installation instructions on the website to install Ollama.</p></li>
+<li><p><strong>Download the LLaMA3 Model</strong>
+After installing Ollama, download the LLaMA3 model using the following command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">ollama</span> <span class="pre">pull</span> <span class="pre">llama3</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>run the llama3 model</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">ollama</span> <span class="pre">run</span> <span class="pre">llama3</span>
+<span class="pre">`</span></code></p>
+</li>
+<li><p><strong>Run the Streamlit App</strong>
+Finally, run the Streamlit app to start the TRIZ Engineering Problem Solver:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">streamlit</span> <span class="pre">run</span> <span class="pre">localtrizzapp.py</span>
+<span class="pre">`</span></code></p>
+<blockquote>
+<div><p>This will open the app in your web browser. You can now use the app locally for solving engineering problems using TRIZ methodology.</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">TRIZ-APP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">🧩 Installation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install_cloud.html">Installation Guide for Cloud Version (Groq API)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Guide for Local Version (Ollama)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#steps">Steps:</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🚀 Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage_cloud.html">Usage Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">🛠 Troubleshooting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_ollama.html">Troubleshooting Guide for Local Version (Ollama)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_cloud.html">Troubleshooting Guide for Cloud Version (Groq API)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="install_cloud.html" title="previous chapter">Installation Guide for Cloud Version (Groq API)</a></li>
+      <li>Next: <a href="usage_cloud.html" title="next chapter">Usage Guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, hajar el hadri and jouak bouthayna.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/install_ollama.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
