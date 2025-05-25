@@ -34,13 +34,13 @@ Meet the Team
    :widths: 50 50
    :header-rows: 0
 
-   * - .. image:: _static/hajar.jpg
+   * - .. image:: _static/hajar.png
          :width: 150
          :alt: Hajar El Hadri
 
        **Hajar El Hadri**  
 
-     - .. image:: _static/bouth.jpg
+     - .. image:: _static/bouth.png
          :width: 150
          :alt: Jouak Bouthayna
 
