@@ -6,7 +6,7 @@ Follow the steps below to start solving engineering problems using TRIZ:
 Once the installation is complete, launch the app:
 
 ```
-streamlit run app.py
+streamlit run trizapp.py
 ```
 
 This will open the app in your web browser.

@@ -15,7 +15,7 @@ Steps:
    First, clone the repository to your local machine:
    
    ```
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/hajar365/TRIZ-APP.git
    cd your-repo
    ```
 
