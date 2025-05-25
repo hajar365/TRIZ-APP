@@ -4,7 +4,7 @@ TRIZ Engineering Problem Solver
 Welcome to the official documentation for the **TRIZ Engineering Problem Solver** —
 an AI-powered assistant designed to help engineers tackle complex design challenges using the TRIZ methodology. Whether you're in automotive, aerospace, or electronics, our tool provides innovative solutions by analyzing contradictions and suggesting inventive principles.
 
-.. image:: _static/logo2.png
+.. image:: _static/logo2.jpeg
    :width: 300
    :align: center
    :alt: TRIZ Engineering Problem Solver Logo
